@@ -1,0 +1,15 @@
+a,
+button {
+    border: none;
+    border-radius: 4px;
+    background-color: #1a73e8;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 24px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    outline: none;
+    text-decoration: none;
+}
+
