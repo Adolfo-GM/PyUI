@@ -134,9 +134,7 @@ def css(design):
     else:
         raise ValueError("Unknown design type")
 
-    
-
-def contentview(*elements, title="PyUI App", css_code="") -> str:
+def contentview(*elements, title="PyUI App") -> str:
     """
     Generates a full HTML document from the given UI elements.
 
@@ -149,13 +147,11 @@ def contentview(*elements, title="PyUI App", css_code="") -> str:
         str: Complete HTML document as a string.
     """
     body_content = "\n".join(elements)
-    style_tag = f"<style>{css_code}</style>" if css_code else ""
     return f"""<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>{title}</title>
-    {style_tag}
 </head>
 <body>
 {body_content}
